@@ -1,0 +1,79 @@
+---
+description: 
+globs: *.ipynb
+alwaysApply: false
+---
+# Handcalcs Usage Guidelines
+
+## Handcalcs Setup and Configuration:
+
+1. **Import and Configuration**:
+   ```python
+   import handcalcs.render
+   from handcalcs import handcalc
+   ```
+
+2. **Decorator Usage**:
+   - Use `@handcalc()` decorator for calculation functions
+   - Use `%%render` magic command for cell-level rendering
+   - Configure precision for engineering accuracy (typically 3-4 decimal places)
+
+3. **Variable Display**:
+   - Use meaningful variable names that render well in LaTeX
+   - Include units in variable comments: `# [kN/m²]`
+   - Group related calculations logically
+
+## Best Practices for Structural Engineering:
+
+1. **Equation Formatting**:
+   - Break complex equations into multiple steps
+   - Show intermediate calculations clearly
+   - Use proper engineering notation and symbols
+   - Include dimensionless ratios and factors
+
+2. **Unit Handling**:
+   - Always include units in comments or variable names
+   - Perform unit conversions explicitly and show them
+   - Use consistent unit systems throughout calculations
+   - Validate dimensional consistency
+
+3. **Professional Presentation**:
+   - Use descriptive variable names (not just f, M, V)
+   - Include subscripts and superscripts in variable names where appropriate
+   - Show design code references in comments
+   - Group calculations by engineering logic (loads, analysis, design, checks)
+
+## Integration with LaTeX Templates:
+
+1. **Template Compatibility**:
+   - Ensure handcalcs output is compatible with Cambridge style template
+   - Format equations to match professional report standards
+   - Include proper equation numbering and referencing
+
+2. **Report Generation**:
+   - Export handcalcs results to LaTeX format
+   - Integrate with existing template structure
+   - Maintain consistent formatting throughout report
+
+## Common Structural Engineering Applications:
+
+1. **Load Calculations**:
+   - Dead loads, live loads, wind loads, seismic loads
+   - Load combinations per applicable codes
+   - Load path analysis
+
+2. **Structural Analysis**:
+   - Moment and shear calculations
+   - Deflection analysis
+   - Stability checks
+
+3. **Member Design**:
+   - Concrete design (ACI 318)
+   - Steel design (AISC 360)
+   - Connection design
+
+4. **Code Compliance**:
+   - Show code equation references
+   - Include safety factors and load factors
+   - Document compliance checks
+

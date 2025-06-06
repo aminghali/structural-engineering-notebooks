@@ -1,0 +1,63 @@
+---
+description: jupiter notebook standards
+globs: 
+alwaysApply: false
+---
+# Notebook Development Standards
+
+## Notebook Structure Standards:
+
+1. **Standard Notebook Layout**:
+   - Header cell with project title, date, engineer name, and revision info
+   - Executive summary cell explaining the calculation purpose
+   - Input parameters section with clear variable definitions
+   - Calculation methodology section with step-by-step derivations
+   - Results summary with key findings
+   - References and code citations
+
+2. **Cell Organization**:
+   - Use markdown cells for explanations and section headers
+   - Keep code cells focused on single calculations or operations
+   - Use proper markdown headers (##, ###) for section organization
+   - Number equations and reference them in text
+
+3. **Variable Naming**:
+   - Use descriptive variable names following engineering notation
+   - Include units in variable names or comments where appropriate
+   - Group related variables together
+   - Use consistent naming conventions throughout
+
+## Code Quality Standards:
+
+1. **Imports and Setup**:
+   - Import all required packages at the top of notebook
+   - Include handcalcs, numpy, matplotlib, pandas as standard imports
+   - Set up matplotlib for professional plotting style
+   - Configure handcalcs for proper symbolic display
+
+2. **Documentation**:
+   - Document all assumptions clearly
+   - Explain engineering principles behind calculations
+   - Include inline comments for complex operations
+   - Reference design codes and standards used
+
+3. **Error Handling**:
+   - Include input validation where appropriate
+   - Handle edge cases and provide warnings
+   - Check for reasonable output ranges
+   - Include sensitivity analysis where relevant
+
+## File Management:
+
+1. **Notebook Organization**:
+   - Store notebooks in `notebooks/` folder
+   - Use descriptive filenames with version numbers
+   - Include date stamps in filename for tracking
+   - Organize by calculation type or project
+
+2. **Output Management**:
+   - Generate outputs to `output/` folder with timestamps
+   - Create separate folders for different output types
+   - Export both .pdf and .tex versions of reports
+   - Maintain clean notebook outputs for version control
+

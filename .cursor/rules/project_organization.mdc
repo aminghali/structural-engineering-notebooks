@@ -1,0 +1,81 @@
+---
+description: 
+globs: *.ipynb
+alwaysApply: false
+---
+# Project Organization Rules
+
+## Directory Structure Maintenance:
+
+1. **Core Folders**:
+   - `notebooks/` - All Jupiter notebooks organized by calculation type
+   - `templates/` - LaTeX templates (Cambridge style, ACI, etc.)
+   - `output/` - Generated reports and calculations with timestamps
+   - `assets/` - Images, diagrams, and supporting files
+   - `docs/` - Project documentation and references
+   - `examples/` - Example calculations and reference notebooks
+   - `scripts/` - Utility scripts for automation
+   - `reports/` - Final professional reports and presentations
+
+2. **File Naming Conventions**:
+   - Notebooks: `YYYY-MM-DD_CalculationType_Description_vX.ipynb`
+   - Templates: `[code]_[type]_template.tex`
+   - Outputs: `YYYY-MM-DD_HHMM_CalculationName_Report.pdf`
+   - Assets: Descriptive names with version numbers
+
+## Version Control and Documentation:
+
+1. **Git Management**:
+   - Commit frequently with meaningful messages
+   - Use .gitignore for temporary files and large outputs
+   - Tag major calculation milestones
+   - Maintain clean commit history
+
+2. **Documentation Requirements**:
+   - Update README.md with new calculation types
+   - Maintain SYSTEM_SUMMARY.md with project overview
+   - Document templates and their usage
+   - Keep requirements.txt updated
+
+## Quality Assurance:
+
+1. **Code Review Process**:
+   - Verify calculations against hand calculations
+   - Check unit consistency throughout
+   - Validate against known solutions where possible
+   - Peer review for complex calculations
+
+2. **Template Management**:
+   - Maintain consistent formatting across templates
+   - Update templates when adding new calculation types
+   - Test template compatibility with different calculations
+   - Keep backup versions of working templates
+
+## Workflow Standards:
+
+1. **Development Process**:
+   - Start with template notebook for new calculations
+   - Develop calculations incrementally
+   - Test with simple cases first
+   - Generate reports early and often
+
+2. **Output Management**:
+   - Archive completed calculations
+   - Maintain separate folders for different projects
+   - Regular cleanup of temporary files
+   - Backup important calculations
+
+## Collaboration Guidelines:
+
+1. **Multi-user Environment**:
+   - Use consistent variable naming across team
+   - Document calculation assumptions clearly
+   - Maintain shared template library
+   - Regular synchronization of notebooks
+
+2. **External Integration**:
+   - Export calculations for external review
+   - Maintain compatibility with common engineering software
+   - Provide clear documentation for non-Python users
+   - Support multiple output formats (PDF, Word, LaTeX)
+

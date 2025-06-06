@@ -1,0 +1,38 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# ALWAYS ACTIVE RULE: Structural Engineering Jupiter Notebooks
+
+This project is specifically aimed at creating Jupiter notebooks for structural engineering calculations that follow professional structural engineering format and standards.
+
+## Core Requirements:
+
+1. **Professional Format**: All calculations must follow professional structural engineering presentation standards
+2. **Handcalcs Package**: Use the `handcalcs` package for proper mathematical presentation and symbolic calculations
+3. **Python Jupiter Best Practices**: Follow proper coding standards for Python Jupiter notebooks
+4. **LaTeX Templates**: Each calculation must have a corresponding LaTeX template based on the Cambridge style template located in the `templates/` folder
+5. **Comprehensive Documentation**: Include detailed calculations, equations, derivation steps, and plots in professional format
+
+## Template Structure:
+- Base templates are in `templates/` folder:
+  - `cambridge_style_template.tex` - Main Cambridge style template
+
+
+## Output Requirements:
+- Each notebook should generate professional-quality reports
+- Include step-by-step calculations with proper engineering notation
+- Generate plots and diagrams using matplotlib with professional styling
+- Export results to LaTeX format using the appropriate template
+- Store outputs in `output/` folder with proper timestamps and organization
+
+## Quality Standards:
+- Follow structural engineering codes and standards (ACI, AISC, IBC, etc.)
+- Include proper units and dimensional analysis
+- Provide clear variable definitions and assumptions
+- Include references to relevant design codes and standards
+- Maintain professional presentation throughout
+
+This rule is ALWAYS ACTIVE and must be considered for every development decision in this project.
+

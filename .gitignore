@@ -1,0 +1,95 @@
+# Structural Engineering Jupiter Notebooks - .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Output files (keep structure but ignore content)
+output/*.pdf
+output/*.html
+output/*.tex
+!output/.gitkeep
+
+# Reports figures
+reports/figures/*.png
+reports/figures/*.jpg
+reports/figures/*.svg
+!reports/figures/.gitkeep
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Environment variables
+.env
+.env.local
+
+# Large data files
+*.csv
+*.xlsx
+!data/source/.gitkeep 

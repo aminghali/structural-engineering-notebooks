@@ -1,0 +1,90 @@
+---
+description: when running the code use this 
+globs: 
+alwaysApply: false
+---
+# Environment Setup Rules
+
+## Virtual Environment Management:
+
+1. **Python Environment**:
+   - Always activate the virtual environment located in `venv/` folder
+   - Use Python 3.8+ for compatibility with all packages
+   - Maintain separate environments for different projects if needed
+   - Regularly update pip and core packages
+
+2. **Package Management**:
+   - Keep `requirements.txt` updated with all dependencies
+   - Pin versions for critical packages (handcalcs, numpy, matplotlib)
+   - Include development dependencies separately if needed
+   - Test package compatibility before major updates
+
+## Required Packages:
+
+1. **Core Scientific Computing**:
+   - numpy - Numerical computations
+   - scipy - Scientific computing and optimization
+   - pandas - Data manipulation and analysis
+   - matplotlib - Professional plotting and visualization
+   - seaborn - Statistical data visualization
+
+2. **Structural Engineering Specific**:
+   - handcalcs - Mathematical presentation and symbolic calculations
+   - sympy - Symbolic mathematics
+   - pint - Unit handling and conversions
+   - forallpeople - Engineering units library
+
+3. **Jupyter and Documentation**:
+   - jupyter - Jupyter notebook environment
+   - nbconvert - Notebook conversion utilities
+   - jupyterlab - Enhanced notebook interface
+   - ipywidgets - Interactive widgets for notebooks
+
+4. **LaTeX and Report Generation**:
+   - pylatex - LaTeX document generation from Python
+   - jinja2 - Template engine for report generation
+   - weasyprint - HTML/CSS to PDF conversion
+   - pandoc - Universal document converter (if available)
+
+## Setup Verification:
+
+1. **Installation Checks**:
+   - Verify all packages import correctly
+   - Test handcalcs rendering capabilities
+   - Check LaTeX template compatibility
+   - Validate matplotlib backend configuration
+
+2. **Environment Testing**:
+   - Run basic calculation tests
+   - Generate sample reports
+   - Test export to different formats
+   - Verify unit handling functionality
+
+## Development Tools:
+
+1. **Code Quality**:
+   - black - Code formatting
+   - flake8 - Linting and style checking
+   - isort - Import statement organization
+   - mypy - Type checking (optional)
+
+2. **Notebook Extensions**:
+   - Variable inspector for debugging
+   - Table of contents for navigation
+   - Code folding for organization
+   - Export enhancements
+
+## Configuration Files:
+
+1. **Jupyter Configuration**:
+   - Set up matplotlib inline backend
+   - Configure handcalcs for optimal rendering
+   - Set default figure sizes and DPI
+   - Enable necessary extensions
+
+2. **Project Configuration**:
+   - Create .env file for environment variables
+   - Set up default paths for templates and outputs
+   - Configure unit systems and precision
+   - Set up logging for debugging
+
